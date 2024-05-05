@@ -1,0 +1,133 @@
+<!-- made by ad1107 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>osu!overlay</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" id="style" />
+    <link rel="stylesheet" href="css/odometr.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="deps/odometr.js"></script>
+  </head>
+
+  <style> body{background-color: rgba(0, 0, 0, 0.771);} </style>
+
+  <body>
+    <div id="main">
+      <div id="info_section">
+        <div id="A1_box">
+          <div id="icon"></div>
+          <div id="A1_text"></div>
+          <div id="A1_number"></div>
+        </div>
+        <div id="A2_box">
+          <div id="icon"></div>
+          <div id="A2_text"></div>
+          <div id="A2_number"></div>
+        </div>
+        <div id="B1_box">
+          <div id="icon"></div>
+          <div id="B1_text"></div>
+          <div id="B1_number"></div>
+        </div>
+        <div id="B2_box">
+          <div id="icon"></div>
+          <div id="B2_text"></div>
+          <div id="B2_number"></div>
+        </div>
+        <div id="C1_box">
+          <div id="icon"></div>
+          <div id="C1_text"></div>
+          <div id="C1_number"></div>
+        </div>
+        <div id="C2_box">
+          <div id="icon"></div>
+          <div id="C2_text"></div>
+          <div id="C2_number"></div>
+        </div>
+        <div id="D1_box">
+            <div id="icon"></div>
+            <div id="D1_text"></div>
+            <div id="D1_number"></div>
+        </div>
+        <div id="D2_box">
+            <div id="icon"></div>
+            <div id="D2_text"></div>
+            <div id="D2_number"></div>
+        </div>
+        </div>
+        <div id="center_section">
+          <div id="title_mask">
+            <div id="title"></div>
+          </div>
+          <div id="artist_mask">
+            <div id="artist"></div>
+          </div>
+          <div>
+            <div id="diff_mask">
+              <div id="diff"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="bottom_line_1"></div>
+
+        <div id="maps_stats_section">
+          <div id="CS_text">Circle Size</div>
+          <div id="CS_shadow">Circle Size</div>
+          <div id="AR_text">Approach Rate</div>
+          <div id="AR_shadow">Approach Rate</div>
+          <div id="OD_text">Overall Diff</div>
+          <div id="OD_shadow">Overall Diff</div>
+          <div id="HP_text">HP Drain</div>
+          <div id="HP_shadow">HP Drain</div>
+          <div id="CS" class="odometer"></div>
+          <div id="AR" class="odometer"></div>
+          <div id="OD" class="odometer"></div>
+          <div id="HP" class="odometer"></div>
+        </div>
+        <div id="bar_box">
+          <div id="bar_hitcount"></div>
+          <div id="bar_X1"></div>
+          <div id="bar_X2"></div>
+          <div id="bar_X3"></div>
+          <div id="bar_X4"></div>
+          <div id="bar_X5"></div>
+          <div id="bar_X6"></div>
+        </div>
+        <div id="hitcount_section">
+          <div id="Z1_text"></div>
+          <div id="Z1_shadow"></div>
+          <div id="Z2_text"></div>
+          <div id="Z2_shadow"></div>
+          <div id="Z3_text"></div>
+          <div id="Z3_shadow"></div>
+          <div id="Z4_text"></div>
+          <div id="Z4_shadow"></div>
+          <div id="Z5_text"></div>
+          <div id="Z5_shadow"></div>
+          <div id="Z6_text"></div>
+          <div id="Z6_shadow"></div>
+          <div id="Z1" class="odometer"></div>
+          <div id="Z2" class="odometer"></div>
+          <div id="Z3" class="odometer"></div>
+          <div id="Z4" class="odometer"></div>
+          <div id="Z5" class="odometer"></div>
+          <div id="Z6" class="odometer"></div>
+        </div>
+        <div id="bottom_line_2"></div>
+        <div id="mods_section">
+          <div id="mods_text">Mods</div>
+          <div id="mods"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="deps/reconnecting-websocket.min.js"></script>
+    <script src="deps/countUp.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
