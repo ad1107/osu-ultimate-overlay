@@ -26,6 +26,7 @@
 - Install [`gosumemory`](https://github.com/l3lackShark/gosumemory).
 - Download the Source Code and put the Folder in the `static` folder.
 - Adjust Settings at `/setting/setting.json` if needed.
+- Run [`gosumemory.exe`]()
 - Visit [http://localhost:24050/[overlayname]](http://localhost:24050/) or add as a Browser Source in OBS.
 
 # Credits
