@@ -148,7 +148,7 @@ function set_hitcount_bar_mania(total) {
   let tempH200 = Math.floor((tH200 / total) * 586);
   let tempH100 = Math.floor((tH100 / total) * 586);
   let tempH50 = Math.floor((tH50 / total) * 586);
-  let tempMiss = Math.floor(((tH100 + tH50 + tMiss) / total) * 586);
+  let tempMiss = Math.floor((tMiss / total) * 586);
   let tempH320 = 586 - tempH300 - tempH200 - tempH100 - tempH50 - tempMiss;
 
   bar_X1.style.width = tempH320 + "px";
@@ -162,11 +162,11 @@ function set_hitcount_bar_mania(total) {
 function set_hitcount_bar(total) {
   let tempH100 = Math.floor((tH100 / total) * 586);
   let tempH50 = Math.floor((tH50 / total) * 586);
-  let tempMiss = Math.floor(((tH100 + tH50 + tMiss) / total) * 586);
+  let tempMiss = Math.floor((tMiss / total) * 586);
   let tempH300 = 586 - tempH100 - tempH50 - tempMiss;
 
   bar_X2.style.width = tempH300 + "px";
-  bar_X4.style.width = tempH100 + "px";
+  bar_X3.style.width = tempH100 + "px";
   bar_X5.style.width = tempH50 + "px";
   bar_X6.style.width = tempMiss + "px";
 }
