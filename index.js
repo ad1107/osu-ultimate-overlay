@@ -297,7 +297,7 @@ setTimeout(function () {
       }
 
       B1_text.innerHTML = "PP";
-      if (state != 2) {
+      if (state != 2 && state != 7) {
         B1_text.innerHTML = "MAX PP";
         t_B1 = menu.pp[100];
       } else {
