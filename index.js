@@ -402,28 +402,32 @@ setTimeout(function () {
       }
       D2_number.innerHTML = t_D2;
 
-      if (t_CS !== menu.bm.stats.memoryCS) {
-        t_CS = menu.bm.stats.memoryCS;
+      if (t_CS !== menu.bm.stats.CS) {
+        if (menu.bm.stats.CS != 0) t_CS = menu.bm.stats.CS;
+        else t_CS = menu.bm.stats.memoryCS;
         CS.innerHTML = t_CS;
         var s = CS_shadow.style;
         s.opacity = 1;
       }
-      if (t_AR !== menu.bm.stats.memoryAR) {
-        t_AR = menu.bm.stats.memoryAR;
+      if (t_AR !== menu.bm.stats.AR) {
+        if (menu.bm.stats.AR != 0) t_AR = menu.bm.stats.AR;
+        else t_AR = menu.bm.stats.memoryAR;
         AR.innerHTML = t_AR;
         var s = AR_shadow.style;
         s.opacity = 1;
       }
 
-      if (t_OD !== menu.bm.stats.memoryOD) {
-        t_OD = menu.bm.stats.memoryOD;
+      if (t_OD !== menu.bm.stats.OD) {
+        if (menu.bm.stats.OD != 0) t_OD = menu.bm.stats.OD;
+        else t_OD = menu.bm.stats.memoryOD;
         OD.innerHTML = t_OD;
         var s = OD_shadow.style;
         s.opacity = 1;
       }
 
-      if (t_HP !== menu.bm.stats.memoryHP) {
-        t_HP = menu.bm.stats.memoryHP;
+      if (t_HP !== menu.bm.stats.HP) {
+        if (menu.bm.stats.HP != 0) t_HP = menu.bm.stats.HP;
+        else t_HP = menu.bm.stats.memoryHP;
         HP.innerHTML = t_HP;
         var s = HP_shadow.style;
         s.opacity = 1;
