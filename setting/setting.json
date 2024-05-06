@@ -1,4 +1,5 @@
 {
 	"transparent" : "off", 
-	"autofade": "off"
-}
+	"autofade": "off",
+	"background_color": "transparent"
+}	

@@ -1,0 +1,3 @@
+- "transparent": Toggle Transparency of the Stats section.
+- "autofade": Fades the overlay in/out when in gameplay or result screen.
+- "background_color": Change the background color of the webpage - Complies with HTML coloring.

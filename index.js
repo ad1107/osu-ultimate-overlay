@@ -1,7 +1,9 @@
 // made by ad1107
 
 let socket = new ReconnectingWebSocket("ws://localhost:24050/ws");
-socket.onopen = () => console.log("WebSocket Server Connected!");
+socket.onopen = () => {
+  console.log("WebSocket Server Connected!");
+};
 socket.onclose = (event) => {
   console.log("Socket Closed Connection: ", event);
   socket.send("Client Closed!");
@@ -124,6 +126,7 @@ function setting() {
   } else if (contents.transparent == "off") {
     info_section.style.backgroundColor = "rgba( 26, 26, 26, 0.8 )";
   }
+  document.body.style.backgroundColor = contents.background_color;
 }
 
 function mstommss(ms) {
@@ -227,13 +230,11 @@ setTimeout(function () {
       uid = contents.uid;
 
       if (contents.autofade == "on") {
-        if (state == 2) {
-          setTimeout(function () {
-            document.body.style.opacity = 1;
-            info_section.style.opacity = 1;
-          }, 1500);
+        if (state == 2 || state == 7) {
+          document.body.style.opacity = 1;
+          info_section.style.opacity = 1;
         }
-        if (state !== 2) {
+        if (state !== 2 && state !== 7) {
           document.body.style.opacity = 0;
           info_section.style.opacity = 0;
         }
