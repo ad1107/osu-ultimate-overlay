@@ -225,7 +225,6 @@ setTimeout(function () {
 
       api = contents.api_key;
       uid = contents.uid;
-      console.log(state);
 
       if (contents.autofade == "on") {
         if (state == 2) {
@@ -403,28 +402,28 @@ setTimeout(function () {
       }
       D2_number.innerHTML = t_D2;
 
-      if (t_CS !== menu.bm.stats.CS) {
-        t_CS = menu.bm.stats.CS;
+      if (t_CS !== menu.bm.stats.memoryCS) {
+        t_CS = menu.bm.stats.memoryCS;
         CS.innerHTML = t_CS;
         var s = CS_shadow.style;
         s.opacity = 1;
       }
-      if (t_AR !== menu.bm.stats.AR) {
-        t_AR = menu.bm.stats.AR;
+      if (t_AR !== menu.bm.stats.memoryAR) {
+        t_AR = menu.bm.stats.memoryAR;
         AR.innerHTML = t_AR;
         var s = AR_shadow.style;
         s.opacity = 1;
       }
 
-      if (t_OD !== menu.bm.stats.OD) {
-        t_OD = menu.bm.stats.OD;
+      if (t_OD !== menu.bm.stats.memoryOD) {
+        t_OD = menu.bm.stats.memoryOD;
         OD.innerHTML = t_OD;
         var s = OD_shadow.style;
         s.opacity = 1;
       }
 
-      if (t_HP !== menu.bm.stats.HP) {
-        t_HP = menu.bm.stats.HP;
+      if (t_HP !== menu.bm.stats.memoryHP) {
+        t_HP = menu.bm.stats.memoryHP;
         HP.innerHTML = t_HP;
         var s = HP_shadow.style;
         s.opacity = 1;
