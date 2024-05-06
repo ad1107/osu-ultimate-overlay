@@ -1,3 +1,4 @@
+
 # osu! Ultimate Overlay
 
 **"The Overlay to Rule ALL Overlays."**
@@ -8,10 +9,10 @@
 - **Settings for Transparency and Auto-fade.**
 - **Customizable Mods images, Fonts, Colors,...**
 - **Auto Title overflow scrolling.**
-
+- Note: Maps Stats and Time for Mania maps may not work due to `gosumemory`'s limitations.
 ## Stats Details
 - **Basic beatmap details:**
-	- Star rating, Max PP, BPM, Gamemode, Time.
+	- Star rating, Max PP, BPM, Gamemode, Time (elapsed/total time).
 	- Title, Artist, Mapper, Difficulty.
 	- CS, AR, OD, HP.
 - **Gameplay statistics:**
