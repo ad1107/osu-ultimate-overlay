@@ -315,11 +315,16 @@ setTimeout(function () {
       C1_text.innerHTML = "BPM";
       minbpm = menu.bm.stats.BPM.min;
       maxbpm = menu.bm.stats.BPM.max;
-      if (minbpm == maxbpm) {
-        C1_number.innerHTML = minbpm;
+      if (gameMode == 0 || gameMode == 1) {
+        if (minbpm == maxbpm) {
+          t_C1 = minbpm;
+        } else {
+          t_C1 = minbpm + " - " + maxbpm;
+        }
       } else {
-        C1_number.innerHTML = minbpm + " - " + maxbpm;
+        t_C1 = "-";
       }
+      C1_number.innerHTML = t_C1;
 
       C2_text.innerHTML = "GAMEMODE";
 
