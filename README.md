@@ -31,6 +31,7 @@
 
 # Credits
 - https://github.com/2222zz/gosumemory-theme
+- https://github.com/VictimCrasher/static/tree/master/VictimCrasherCompact
 - Mods Images: Selyu v2.3: https://skins.osuck.net/skins/47
 
 # Contributing
