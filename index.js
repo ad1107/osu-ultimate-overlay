@@ -393,9 +393,9 @@ setTimeout(function () {
       } else D1_number.innerHTML = "-";
 
       D2_text.innerHTML = "TIME";
-      timefull = mstommss(menu.bm.time.full);
+      timemp3 = mstommss(menu.bm.time.mp3 - menu.bm.time.firstObj);
+      timefull = mstommss(menu.bm.time.full - menu.bm.time.firstObj);
       timecurrent = mstommss(menu.bm.time.current);
-      timemp3 = mstommss(menu.bm.time.mp3);
       timeelapsed = mstommss(menu.bm.time.current - menu.bm.time.firstObj);
       if (state == 0 || state == 2 || state == 7) {
         if (menu.bm.time.mp3 != 0) t_D2 = timeelapsed + " / " + timemp3;
@@ -580,7 +580,16 @@ setTimeout(function () {
         }
       }
 
-      if (state != 2 && state != 7) {
+      if (
+        (state != 2 && state != 7) ||
+        gameplay.hits.geki +
+          gameplay.hits[300] +
+          gameplay.hits.katu +
+          gameplay.hits[100] +
+          gameplay.hits[50] +
+          gameplay.hits[0] ==
+          0
+      ) {
         bar_X1.style.width = "0px";
         bar_X2.style.width = "0px";
         bar_X3.style.width = "0px";
