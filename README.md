@@ -2,7 +2,7 @@
 # osu! Ultimate Overlay
 
 **"The Overlay to Rule ALL Overlays."**
-![Overlay in Action](https://cdn.discordapp.com/attachments/931134695884857365/1236711531182555238/demo.png?ex=663900de&is=6637af5e&hm=56394b31983e53d4aadb70dc822bd410e72d00a4095259173825e892d62bac27&)
+![Overlay in Action](https://github.com/ad1107/osu-ultimate-overlay/blob/main/readme/demo.png?raw=true)
 # Features
 
 - **Supports ALL gamemodes (std, mania, taiko, ctb).**
