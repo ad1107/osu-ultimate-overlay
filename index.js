@@ -45,6 +45,8 @@ let artist_mask = document.getElementById("artist_mask");
 let diff = document.getElementById("diff");
 let diff_mask = document.getElementById("diff_mask");
 
+let stateinfo = document.getElementById("stateinfo");
+
 let Z1_text = document.getElementById("Z1_text");
 let Z2_text = document.getElementById("Z2_text");
 let Z3_text = document.getElementById("Z3_text");
@@ -217,14 +219,28 @@ setTimeout(function () {
       let gameplay = data.gameplay;
       let gameMode = gameplay.gameMode;
       let state = menu.state;
-      /* State info:
-      0: menu
-      1: editor
-      2: ingame
-      4: song select - editor
-      5: song select
-      7: result
-      */
+
+      const states = {
+        "-1": "Inactive",
+        0: "Main Menu",
+        1: "Editor",
+        2: "Playing",
+        3: "Shutting Down",
+        4: "Editor - Song Select",
+        5: "Song Select",
+        6: "Unknown",
+        7: "Results Screen",
+        10: "Starting Up",
+        11: "Multiplayer Lobby",
+        12: "Multiplayer",
+        13: "Multiplayer - Song Select",
+        14: "Multiplayer - Results Screen",
+        15: "osu!direct",
+        17: "Ranking Tag Coop",
+        18: "Ranking Team",
+        19: "Processing Beatmaps",
+        22: "Tourney",
+      };
 
       api = contents.api_key;
       uid = contents.uid;
@@ -597,6 +613,14 @@ setTimeout(function () {
         bar_X5.style.width = "0px";
         bar_X6.style.width = "0px";
       }
+
+      const stateName = states[state];
+      if (stateName) {
+        stateinfo.innerHTML = stateName;
+      } else {
+        stateinfo.innerHTML = "Unknown state";
+      }
+
       if (gameMode == 0) {
         Z1_text.innerHTML = "combo";
         Z1_shadow.innerHTML = "combo";

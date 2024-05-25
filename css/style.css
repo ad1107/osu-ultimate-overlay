@@ -246,10 +246,24 @@ html {
   display: flex;
 }
 
+#stateinfo {
+  font-family: TOMMY;
+  font-weight: 120;
+  font-size: 17pt;
+  top: 368px;
+  left: 345px;
+  transform: translateX(-50%);
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+}
+
 #maps_stats_section {
   position: absolute;
   left: 40px;
-  top: 225px;
+  top: 245px;
   width: 586px;
   height: 120px;
 }
@@ -336,7 +350,7 @@ html {
 #bar_box {
   position: absolute;
   left: 40px;
-  top: 450px;
+  top: 470px;
   width: 586px;
   height: 6px;
   background-color: dimgray;
@@ -374,7 +388,7 @@ html {
 #hitcount_section {
   position: absolute;
   left: 40px;
-  top: 400px;
+  top: 420px;
   width: 586px;
   height: 120px;
 }
@@ -485,7 +499,7 @@ html {
 #bottom_line_2 {
   position: absolute;
   left: 40px;
-  top: 540px;
+  top: 550px;
   width: 586px;
   height: 6px;
   background-color: dimgray;
@@ -495,7 +509,7 @@ html {
 #mods_section {
   position: absolute;
   left: 40px;
-  top: 545px;
+  top: 555px;
   width: 586px;
   height: 120px;
 }
