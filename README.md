@@ -1,4 +1,5 @@
 
+
 # osu! Ultimate Overlay
 
 **"The Overlay to Rule ALL Overlays."**
@@ -24,10 +25,12 @@
 
 # Instructions
 
-- Install [`gosumemory`](https://github.com/l3lackShark/gosumemory).
+**Warning: Due to the hiatus nature of [`gosumemory`](https://github.com/l3lackShark/gosumemory), it is recommended to use [`tosu`](https://github.com/tosuapp/tosu) as it's both in active development and it's compatible with all gosumemory API. However, feel free to use gosumemory with this if you want.**
+
+- Install [`tosu`](https://github.com/tosuapp/tosu).
 - Download the Source Code and put the Folder in the `static` folder.
 - Adjust Settings at `/setting/setting.json` if needed.
-- Run [`gosumemory.exe`]()
+- Run [`tosu.exe`]()
 - Visit [http://localhost:24050/[overlayname]](http://localhost:24050/) or add as a Browser Source in OBS.
 
 # Credits
