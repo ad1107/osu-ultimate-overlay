@@ -2,7 +2,7 @@
 
 # osu! Ultimate Overlay
 
-**"The Overlay to Rule ALL Overlays."**
+**"The Overlay to include every statistics you need for analyzing your plays."**
 ![Overlay in Action](https://github.com/ad1107/osu-ultimate-overlay/blob/main/readme/demo.png?raw=true)
 # Features
 
